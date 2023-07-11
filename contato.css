@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*  {
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   list-style: none;
+   text-decoration: none;
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+ .formulario {
+    width: 400px;
+    padding: 30px;
+    border: 1px solid #fff
+}
+.formulario p {
+    width: 100%;
+    font-size: 1.5em;
+    color: #fff;
+    
+}
+.field {
+ width: 100%;
+ margin: 15px 0;
+ color: #fff;
+
+}
+.field label,
+.field span{
+ padding-left: 10px;
+ font-size: 1.1em;
+ display: block;
+ width: 100%;
+ color: #fff;
+ font-family: 'kdam thmor Pro', sans-serif;
+}
+.radiobox label {
+ width: auto;
+ display: inline-block;
+ 
+}
+ imput[type=text],
+ imput[type=email],
+ textarea {
+ width: 100%;
+ padding-left: 10px;
+ height: 30px;
+ line-height: 30px;
+ border-radius: 15px;
+ border: 1px solid #fff;
+ outline: none;
+ font-family: 'kdam thmor Pro', sans-serif;
+ color: #fff;
+ 
+
+ }
+ input#nao{
+    margin-left: 30px;
+ }
+ textarea {
+    line-height: 20px;
+    padding: 10px;
+    height: 90px;
+    resize: none;
+    color: #fff;
+    font-family: 'kdam thmor Pro', sans-serif;
+ }
+ imput[type=submit]{
+ display: block;
+ background-color: #fff;
+ color: #fff;
+ height: 35px;
+ border: none;
+ outline: 0;
+ cursor: pointer;
+ width: 100px;
+ margin: 0 auto;
+ text-align: center;
+ border-radius: 15px;
+ }

@@ -1,0 +1,214 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*  {
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   list-style: none;
+   text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+     width: 60%;
+
+}
+ul {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+li {
+   list-style: none;
+   color: aliceblue;
+   cursor: pointer;
+   font-size: 19px;
+   transition: .5s;
+   font-family: 'kdam thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+#banner {
+    background-image: url('https://legadodadc.com.br/wp-content/uploads/2021/11/FD1vP6lWQAMNHQl-1.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+   justify-content: center;
+}
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trailer {
+     width: 50%;
+}
+#sinopse {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-left: 30px;
+}
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'kdam thmor Pro', sans-serif;
+    width: 70%;
+}
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+.button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card {
+   width: 100%;
+   height: 600px;
+   background-size: cover;
+   background-position: 50% 50%;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 1s;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding: 0 0 20px 10px;
+   color: #fff;
+   font-size: 17px;
+   font-family: 'kdam thmor Pro', sans-serif;
+}
+.card:hover {
+     transform: scale(1.02);
+}
+.banner-1 {
+ background-image: url(https://noticiasdatv.uol.com.br/media/_versions/artigos_2021/batman-robert-pattinson-capuz-foto-divulgacao-warner-bros_fixed_large.jpg);
+}
+.banner-2 {
+ background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/02/Zoe-CNN-Batman.png?w=390);
+}
+.banner-3 {
+ background-image: url(data:image/jpeg;base64,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);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span {
+  color: #fff;
+  font-family: 'kdam thmor Pro', sans-serif;
+}
+.footer-navigation {
+    display: none;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width:768px){
+    .footer-navigation {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner {
+        background-position: 40px;
+    }
+    #trailer-container {
+        width: 100%;
+        height: 400%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content {
+       grid-template-columns: 1fr;
+       margin-top: 150px;
+    }
+     
+ 
+ }
+
+
+ 
+
+
